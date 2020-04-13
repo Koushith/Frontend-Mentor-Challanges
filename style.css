@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.hero-bg {
+  background: #307d99 url("./img/bg.jpg");
+  background-position: 12% 83%;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 4em;
+}
+
+header {
+  padding: 1em 0;
+}
+
+.hero-bg a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  /* rem for font and em for padding */
+}
+
+section {
+  padding: 0 1em;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 2em 0 1.2em;
+}
+
+h1 span {
+  text-transform: uppercase;
+  display: block;
+  font-size: 1.4rem;
+  position: relative;
+  z-index: 1;
+}
+/* position- absolute , relaive.. for parent element set it to relative, other one set it to absolute */
+
+.hero-bg p {
+  font-weight: bold;
+  margin: 0 1em 3em;
+}
+
+.form-container {
+  background-color: #fff;
+  margin: 2em -1em 0;
+  padding: 2em;
+}
+
+label {
+  color: #2d7d98;
+  display: block;
+  font-size: 1.2em;
+}
+
+input[type="text"] {
+  border: 1px solid #707070;
+  width: 100%;
+  padding: 1em;
+  /* when you add padding long with width user box-sizing: borderbox; */
+  box-sizing: border-box;
+  border-radius: 0.5em;
+  margin-top: 1.2em;
+}
+
+.form-container p {
+  color: grey;
+  margin-bottom: 1.5em;
+  font-weight: normal;
+  font-size: 0.9em;
+  margin-top: 0.3em;
+}
+
+input[type="button"] {
+  background-color: #f89104;
+  color: #fff;
+  width: 100%;
+  padding: 0.5em 0;
+  border: none;
+  border-radius: 0.5em;
+  font-weight: bold;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background: #00bfff;
+}
+
+.authentic {
+  margin: 0;
+}
+
+.right-col {
+  text-align: center;
+  margin: 3em 1em;
+}
+
+h2 {
+  text-transform: uppercase;
+  position: relative;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  width: 3em;
+  background: #00bfff;
+  height: 0.4em;
+  bottom: 0;
+  z-index: -1;
+  margin-left: -0.3em;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  line-height: 2em;
+}
+
+/* 1:41min */
