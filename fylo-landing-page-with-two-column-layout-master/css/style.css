@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 10px;
 }
 
 /* colors */
@@ -36,6 +37,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+
   font-weight: 400;
   color: var(--desaturated-blue);
 }
@@ -48,4 +50,84 @@ h5,
 h6 {
   font-family: 'Raleway', sans-serif;
   color: var(--dark-blue);
+}
+
+header {
+  width: 100%;
+  margin: auto;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.btn {
+  color: #fff;
+  background: var(--dark-blue);
+  padding: 0.4rem;
+  border: none;
+  border-radius: 5%;
+}
+
+/* nav */
+nav {
+  padding: 1.6rem 1.6rem;
+  align-items: flex-end;
+}
+nav#main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .nav-menu {
+  display: flex;
+  padding-top: 1rem;
+}
+
+nav .nav-menu ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  padding-right: 1.2rem;
+  font-size: 1.8rem;
+  overflow: hidden;
+}
+nav .nav-menu ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .logo img {
+  width: 100px;
+}
+
+/* hero */
+
+select#hero {
+  width: 100%;
+}
+section .conntent-wrapper {
+  display: flex;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+section .conntent-wrapper .inner-content h1 {
+  font-size: 4rem;
+}
+section .conntent-wrapper .inner-content p {
+  font-size: 1.8rem;
+  padding-top: 1rem;
+}
+
+section .conntent-wrapper .img img {
+  width: 100%;
+}
+section .conntent-wrapper input[type='email'] {
+  padding: 0.8rem;
+  width: 40%;
+  margin-top: 1.2rem;
 }
