@@ -131,3 +131,20 @@ section .conntent-wrapper input[type='email'] {
   width: 40%;
   margin-top: 1.2rem;
 }
+
+/* Footer */
+
+footer {
+  background: var(--dark-blue);
+  color: #fff;
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1rem;
+}
+
+footer .container .first h2 {
+  color: #fff;
+}
