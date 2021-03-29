@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 10px; }
+
+.card__container {
+  background-color: aquamarine;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .card__container .profile__card {
+    margin: auto;
+    background-color: #fff;
+    width: fit-content;
+    border-radius: 10px; }
+    .card__container .profile__card-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -50px;
+      border-top: 30px; }
+      .card__container .profile__card-image .img {
+        border-radius: 50%;
+        border: 4px solid #fff; }
+    .card__container .profile__card-stats h3 {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #2d3248;
+      font-weight: 700;
+      margin-bottom: 10px; }
+      .card__container .profile__card-stats h3 span {
+        color: #969696;
+        font-weight: 400; }
+    .card__container .profile__card-stats .london {
+      color: #969696;
+      font-weight: 400;
+      margin: 0 0 10px 0; }
+    .card__container .profile__card-stats-numbers {
+      border-top: 0.5px solid #969696;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px; }
+      .card__container .profile__card-stats-numbers .stats .helper-text {
+        color: #969696;
+        font-weight: 400;
+        text-align: center; }

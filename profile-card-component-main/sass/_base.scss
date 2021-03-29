@@ -1,0 +1,88 @@
+$dark-cyan: hsl(185, 75%, 39%);
+$dark-blue: hsl(229, 23%, 23%);
+$grayish-blue: hsl(227, 10%, 46%);
+$neutral: hsl(0, 0%, 59%);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 10px;
+}
+
+.card__container {
+  background-color: aquamarine;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .profile__card {
+    margin: auto;
+    background-color: #fff;
+    width: fit-content;
+    border-radius: 10px;
+
+    // &-header {
+    //   background-image: url('./images/bg-pattern-card.svg');
+    // }
+
+    &-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -50px;
+      border-top: 30px;
+
+      .img {
+        border-radius: 50%;
+        border: 4px solid #fff;
+      }
+    }
+
+    &-stats {
+      h3 {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 18px;
+        color: $dark-blue;
+        font-weight: 700;
+        margin-bottom: 10px;
+        span {
+          color: $neutral;
+          font-weight: 400;
+        }
+      }
+      .london {
+        color: $neutral;
+        font-weight: 400;
+        margin: 0 0 10px 0;
+      }
+    }
+
+    &-stats-numbers {
+      border-top: 0.5px solid $neutral;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px;
+
+      .stats {
+        .helper-text {
+          color: $neutral;
+          font-weight: 400;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
